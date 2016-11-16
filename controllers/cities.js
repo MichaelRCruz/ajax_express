@@ -32,7 +32,7 @@ var cityIndex = function(req, res) {
 var cityCreate = function(req, res) {
   var city       = new City();   // create a new instance of the City model
 
-  city.city      = req.body.city;
+  city.name      = req.body.name;
   city.state  = req.body.state;
   city.population  = req.body.population;
   city.capital  = req.body.capital;
