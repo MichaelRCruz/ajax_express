@@ -5,7 +5,7 @@ var citySchema = new mongoose.Schema({
   name: String,
   state: String,
   population: Number,
-  captial: Boolean
+  capital: Boolean
 });
 
 // Create the model using your schema.

@@ -8,9 +8,7 @@ $(function() {
     var population = $('#population').val();
     var capital = $('#capital').val();
 
-    $.post( "http://localhost:3000/cities", { "name": name, "state": state, "population": population, "capital": capital }, function(event) {
-      event.preventDefault()
-    }, "json");
+    $.post( "http://localhost:3000/cities", { "name": name, "state": state, "population": population, "capital": capital }, "json");
 
     event.preventDefault();
   })
