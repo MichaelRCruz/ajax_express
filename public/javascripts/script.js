@@ -1,11 +1,16 @@
 $(function() {
-  $('#submit').click(function(event){
-    console.log('jQuery works')
-    // $.post( "http://localhost:3000/", { func: "getNameAndTime" }, function( data ) {
-    //   console.log( data.name ); // John
-    //   console.log( data.time ); // 2pm
-    // }, "json");
+  $('#submit').click(function(event) {
 
+    console.log('jQuery works')
+
+    var city = $('#city').val();
+    var state = $('#state').val();
+    var population = $('#population').val();
+    var capital = $('#capital').val();
+
+    $.post( "http://localhost:3000/cities", { "city": city, "state": state, "population": population, "capital": capital }, function(event) {
+      event.preventDefault()
+    }, "json");
 
     event.preventDefault();
   })
