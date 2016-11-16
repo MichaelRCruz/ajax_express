@@ -3,9 +3,33 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
   <body>
+
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p>this form will add to our database using ajax</p>
+
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">City</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="string">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">State</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="string, e.g., CA">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput3">Population</label>
+        <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="integer (no commas)">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput4">capital</label>
+        <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="true / false">
+      </div>
+      <button type="button" class="btn btn-primary">AJAX it in there</button>
+    </form>
+
   </body>
 </html>
