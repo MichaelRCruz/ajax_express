@@ -1,12 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-// Require fishes controller
+// Require cities controller
 var CitiesCtrl = require('../controllers/cities')
 
-//||||||||||||||||||||||||||--
-// FISHES CRUD SERVICES
-//||||||||||||||||||||||||||--
+// CITIES CRUD SERVICES
 router.get('/:id',    CitiesCtrl.cityShow);
 router.get('/',       CitiesCtrl.cityIndex);
 router.post('/',      CitiesCtrl.cityCreate);
